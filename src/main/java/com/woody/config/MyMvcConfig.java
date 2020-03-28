@@ -41,10 +41,10 @@ public class MyMvcConfig implements WebMvcConfigurer {
 //                .excludePathPatterns("/js/**", "/css/**", "/images/**");
     }
 
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/**").addResourceLocations("classpath:static");
-    }
+//    @Override
+//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+//        registry.addResourceHandler("/**").addResourceLocations("classpath:static");
+//    }
 
 
 

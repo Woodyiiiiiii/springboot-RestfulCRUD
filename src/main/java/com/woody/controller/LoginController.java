@@ -1,12 +1,10 @@
 package com.woody.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.thymeleaf.util.StringUtils;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
 
@@ -17,7 +15,7 @@ public class LoginController {
     @PostMapping(value = "/user/login")
     public String login(@RequestParam("username") String username,
                         @RequestParam("password") String password,
-                        Map<String, Object> map, HttpSession httpSession) {
+                        HttpSession httpSession, Map<String, Object> map) {
         if (!StringUtils.isEmpty(username) && "123456".equals(password)) {
             // 登录成功
             // 为防止表单重复提交，使用重定向
