@@ -8,5 +8,6 @@ Bug：
 2. 跳转到dashboard.html的时候用户名处不能使用[[${}]] thymeleaf表达式，否则会出现500错误——未知
 3. 输入错误密码后，静态资源被拦截——implements ...er
 4. 跳转到dashboard.html图片无法正常展示——无
+5. **一直报使用thymeleaf出错**——无法解决
 
 仍在更新中...
